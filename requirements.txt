@@ -1,0 +1,6 @@
+antiorm==1.2.1
+db==0.1.1
+db-sqlite3==0.0.1
+altgraph==0.17.2
+pyinstaller==5.1
+pyinstaller-hooks-contrib==2022.6
