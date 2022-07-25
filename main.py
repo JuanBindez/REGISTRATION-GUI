@@ -53,6 +53,7 @@ def delete_database():
 window = Tk()
 window.title("Registration")
 window.geometry("600x600")
+window['background'] = '#58F'
 
 
 # Inputs
