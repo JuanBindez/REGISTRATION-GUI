@@ -53,7 +53,7 @@ def delete_database():
 window = Tk()
 window.title("Registration")
 window.geometry("600x600")
-window['background'] = '#58F'
+window['background'] = '#58F'# site para gerar cores Hex:  https://www.rapidtables.com/web/color/RGB_Color.html
 
 
 # Inputs
