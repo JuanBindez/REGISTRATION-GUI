@@ -1,4 +1,4 @@
-# programas que devem ser instalados no Linux:
+# Programas que devem ser instalados no Linux:
 
     sudo apt-get install python3-tk
 
