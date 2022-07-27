@@ -17,25 +17,25 @@ Copyright 2022 Juan Carlos Bindez
 import sqlite3
 
 
-banco_db = sqlite3.connect("data_base_registration.db")
-cursor = banco_db.cursor()
+base_db = sqlite3.connect("registration.db")
+cursor = base_db.cursor()
 
 def create_table():
     cursor.execute("""
-        CREATE TABLE IF NOT EXISTS cadastro(
+        CREATE TABLE IF NOT EXISTS record(
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        nome TEXT,
-        idade INTEGER,
+        name TEXT,
+        age INTEGER,
         email TEXT)
         """)
 
 
 def delete_id(id_del):
-    cursor.execute("DELETE FROM cadastro WHERE id=?", [id_del])
+    cursor.execute("DELETE FROM record WHERE id=?", [id_del])
     banco_db.commit()
 
 
-def inserir_dados(i, g, h):
+def insert_datas(a, b, c):
     
-    cursor.execute("INSERT INTO cadastro VALUES(NULL, '"+i+"','"+g+"','"+h+"')")
-    banco_db.commit()#este comando salva os dados no banco de dados
+    cursor.execute("INSERT INTO record VALUES(NULL, '"+a+"','"+b+"','"+c+"')")
+    banco_db.commit()#this command saves the datas in database
