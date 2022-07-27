@@ -4,10 +4,10 @@
 
 
 ## Activate Virtualenv and Enter Command:
-### Requerimentos pip
+### Requirements pip
     $ pip install -r requirements.txt
 
-## Este Software Precisa ser Compilado , Comando Para Compilar:
+## This Software Needs To Be Compiled To Generate An Executable, Command To Compile:
 ### Pyinstaller
     $ pyinstaller --onefile --noconsole --windowed main.py
 
