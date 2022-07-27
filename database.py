@@ -32,10 +32,10 @@ def create_table():
 
 def delete_id(id_del):
     cursor.execute("DELETE FROM record WHERE id=?", [id_del])
-    banco_db.commit()
+    base_db.commit()
 
 
 def insert_datas(a, b, c):
     
     cursor.execute("INSERT INTO record VALUES(NULL, '"+a+"','"+b+"','"+c+"')")
-    banco_db.commit()#this command saves the datas in database
+    base_db.commit()#this command saves the datas in database
