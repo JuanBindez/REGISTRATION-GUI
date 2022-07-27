@@ -1,4 +1,4 @@
-## Programas que devem ser instalados no Linux:
+## Programs that must be installed on Linux:
 ### Tkinter
     sudo apt-get install python3-tk
 
