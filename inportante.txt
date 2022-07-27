@@ -1,8 +1,0 @@
-## version changes ##
-
-
-## V 0.1 ##
-
--- create the interface of user
--- create the batabase
--- create the struture of software
