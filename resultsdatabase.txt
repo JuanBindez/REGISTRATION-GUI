@@ -1,0 +1,4 @@
+(1, 'juanbindez', 27, 'juanbindez@gmail.com')
+(2, 'juan', 27, 'juanbindez@gmail.com')
+(3, 'juan bindez', 28, 'fwfwfwefwfwef')
+(4, 'juan bindez', 89, 'gdsgegfedfgeg')

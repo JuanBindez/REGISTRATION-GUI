@@ -11,7 +11,8 @@ Python Version: 3.10
 Local: Brazil
 '''
 
-
+import os
+import time
 import database
 from tkinter import *
 from tkinter import messagebox
@@ -33,11 +34,14 @@ def to_see_database():
     ver_db = database.cursor.fetchall()
 
     
-    # in test DataBase
-    for pessoa in ver_db:
-        print(pessoa)
-        #label = Label(window, text="DB" + str(pessoa)).place(x=20, y=60)
-    # test DataBase
+    # genarete an file whith results of database
+    file = 'resultsdatabase.txt'
+    os.remove(file)
+    time.sleep(5)
+
+    with open("resultsdatabase.txt", "w") as w:
+        for item in ver_db:
+            w.write(str(item)+'\n')
 
 
 def delete_database():
@@ -50,7 +54,7 @@ def delete_database():
 window = Tk()
 window.title("Registration")
 window.geometry("600x600")
-window['background'] = '#58F'# site to generate colors Hex:  https://www.rapidtables.com/web/color/RGB_Color.html
+window['background'] = '#262626'# site to generate colors Hex:  https://www.rapidtables.com/web/color/RGB_Color.html
 
 
 # Inputs

@@ -4,6 +4,7 @@ Copyright 2022 Juan Carlos Bindez
 Licensed under the Apache License, Version 2.0
 '''
 
+
 import sqlite3
 
 
