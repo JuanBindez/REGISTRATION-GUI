@@ -1,5 +1,3 @@
-# Em Desenvolvimento!
-
 ## Ative a Virtualenv e Digite o Comando:
 
     $ pip install -r requirements.txt
