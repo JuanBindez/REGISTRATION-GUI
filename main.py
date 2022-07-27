@@ -27,11 +27,14 @@ def insert_datas_io():
     email = input_email.get()
 
     database.insert_datas(name, age, email)
+    messagebox.showinfo("Olá", "Salvamos Para Você No Banco de Dados")
 
 
 def to_see_database():
     database.cursor.execute("SELECT * FROM record")
     ver_db = database.cursor.fetchall()
+    time.sleep(3)
+    messagebox.showinfo("Olá", "Foi Gerado o Arquivo resultsdatabase.txt")
 
     
     # genarete an file whith results of database
@@ -45,8 +48,17 @@ def to_see_database():
 
 
 def delete_database():
-    del_id = input_delete.get()
-    database.delete_id(del_id)
+    ask = messagebox.askyesno("Atenção!", "Este Id Será Deletado Do Banco de Dados !, Tem Certeza?")
+    if ask == True:
+        time.sleep(2)
+        messagebox.showinfo("Olá", "Id Deletado")
+        del_id = input_delete.get()
+        database.delete_id(del_id)
+
+    elif ask == False:
+        pass
+
+        
 
 
 # Initial GUI
