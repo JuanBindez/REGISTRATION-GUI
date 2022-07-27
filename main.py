@@ -23,16 +23,16 @@ from tkinter import messagebox
 database.create_table()
 
 
-def inserir_dados_io():
-    nome = entrada_nome.get()
-    idade = entrada_idade.get()
-    email = entrada_email.get()
+def insert_datas_io():
+    name = input_name.get()
+    age = input_age.get()
+    email = input_email.get()
 
-    database.inserir_dados(nome, idade, email)
+    database.insert_datas(name, age, email)
 
 
-def ver_database():
-    database.cursor.execute("SELECT * FROM cadastro")
+def to_see_database():
+    database.cursor.execute("SELECT * FROM record")
     ver_db = database.cursor.fetchall()
 
     
@@ -44,7 +44,7 @@ def ver_database():
 
 
 def delete_database():
-    del_id = entrada_deletar.get()
+    del_id = input_delete.get()
     database.delete_id(del_id)
 
 
@@ -53,39 +53,39 @@ def delete_database():
 window = Tk()
 window.title("Registration")
 window.geometry("600x600")
-window['background'] = '#58F'# site para gerar cores Hex:  https://www.rapidtables.com/web/color/RGB_Color.html
+window['background'] = '#58F'# site to generate colors Hex:  https://www.rapidtables.com/web/color/RGB_Color.html
 
 
 # Inputs
-entrada_nome = (Entry(window, width=40))
-entrada_nome.place(x=150, y=50)
-label = Label(window, text="Nome *").place(x=150, y=30)
+input_name = (Entry(window, width=40))
+input_name.place(x=150, y=50)
+label = Label(window, text="Name *").place(x=150, y=30)
 
 
-entrada_idade = (Entry(window, width=40))
-entrada_idade.place(x=150, y=100)
-label = Label(window, text="Idade * ").place(x=150, y=80)
+input_age = (Entry(window, width=40))
+input_age.place(x=150, y=100)
+label = Label(window, text="Age * ").place(x=150, y=80)
 
 
-entrada_email = (Entry(window, width=40))
-entrada_email.place(x=150, y=150)
+input_email = (Entry(window, width=40))
+input_email.place(x=150, y=150)
 label = Label(window, text="Email *").place(x=150, y=130)
 
-entrada_deletar = (Entry(window, width=10))
-entrada_deletar.place(x=150, y=220)
-label = Label(window, text="deletar Id *").place(x=150, y=200)
+input_delete = (Entry(window, width=10))
+input_delete.place(x=150, y=220)
+label = Label(window, text=" Delete Id *").place(x=150, y=200)
 # End Inputs
 
 
 # Buttons
-button = Button(window, text="Salvar", command=inserir_dados_io, fg='white', bg='green')
+button = Button(window, text="Save", command=insert_datas_io, fg='white', bg='green')
 button.place(x=210, y=400)
 
-button = Button(window, text="Ver Registro", command=ver_database, fg='white', bg='blue')
+button = Button(window, text="See Registration", command=to_see_database, fg='white', bg='blue')
 button.place(x=290, y=400)
 
 
-button = Button(window, text="Deletar", command=delete_database, fg='white', bg='red')
+button = Button(window, text="Delete", command=delete_database, fg='white', bg='red')
 button.place(x=240, y=215)
 # End Buttons
 # End GUI
