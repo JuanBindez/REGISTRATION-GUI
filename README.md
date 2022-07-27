@@ -3,3 +3,6 @@
 
 
 ### Este sofware serve como base para registrar dados e apagar dados do banco com sqlite3 e tkinter para GUI (interface grafica do usuario), você pode alterar os dados da tabela e da interface do tkinter como achar melhor e depois compilar para criar um programa executavel.
+
+![Captura de tela de 2022-07-27 11-22-23](https://user-images.githubusercontent.com/79322362/181271657-f1356b9c-edef-40d1-ae74-98d18fde8d18.png)
+
