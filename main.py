@@ -4,6 +4,13 @@ Copyright 2022 Juan Carlos Bindez
 Licensed under the Apache License, Version 2.0
 '''
 
+'''
+Author: www.github.com/JuanBindez
+Description: registration whith Tkinter and Sqlite3
+Python Version: 3.10
+Local: Brazil
+'''
+
 
 import database
 from tkinter import *
