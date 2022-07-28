@@ -73,7 +73,7 @@ def dentro_ok():
     window.title("Registration")
     window.geometry("600x600")
     window['background'] = '#262626'# site to generate colors Hex:  https://www.rapidtables.com/web/color/RGB_Color.html
-
+    window.resizable(False, False)# False para não responsivo e True para responsivo.
 
     # Inputs
     input_name = (Entry(window, width=40))
@@ -128,6 +128,8 @@ window = Tk()
 window.title("Login")
 window.geometry("460x280")
 window['background'] = '#262626'#
+window.resizable(False, False)# False para não responsivo e True para responsivo.
+
 
 input_user = (Entry(window, width=20))
 input_user.place(x=150, y=50)
@@ -137,7 +139,6 @@ input_pass = (Entry(window, width=20))
 input_pass.place(x=150, y=140)
 label = Label(window, text="PassWord *").place(x=150, y=120)
     
-
 button = Button(window, text="Entrar", command=analisa_credenciais, fg='white', bg='green')
 button.place(x=210, y=210)
 
