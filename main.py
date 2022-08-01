@@ -20,8 +20,6 @@ from tkinter import messagebox
 database.create_table()
 
 
-        
-
 def dentro_ok():
 
     def insert_datas_io():
@@ -63,7 +61,6 @@ def dentro_ok():
             pass
 
             
-    
     # Initial GUI
     # X é para os lados e Y é altura
     global window
@@ -79,11 +76,9 @@ def dentro_ok():
     input_name.place(x=150, y=50)
     label = Label(window, text="Name *").place(x=150, y=30)
 
-
     input_age = (Entry(window, width=40))
     input_age.place(x=150, y=100)
     label = Label(window, text="Age * ").place(x=150, y=80)
-
 
     input_email = (Entry(window, width=40))
     input_email.place(x=150, y=150)
@@ -93,8 +88,6 @@ def dentro_ok():
     input_delete.place(x=150, y=220)
     label = Label(window, text=" Delete Id *").place(x=150, y=200)
     # End Inputs
-
-
     # Buttons
     button = Button(window, text="Save", command=insert_datas_io, fg='white', bg='green')
     button.place(x=210, y=400)
@@ -102,25 +95,21 @@ def dentro_ok():
     button = Button(window, text="See Registration", command=to_see_database, fg='white', bg='blue')
     button.place(x=290, y=400)
 
-
     button = Button(window, text="Delete", command=delete_database, fg='white', bg='red')
     button.place(x=240, y=215)
     # End Buttons
     # End GUI
 
 
-
 def analisa_credenciais():
     user = input_user.get()
     password = input_pass.get()
-
 
     if user == 'admin' and password == 'admin':
         dentro_ok()
 
     else:
         messagebox.showinfo("Ops!", "Login Errado")
-
 
 
 window = Tk()
@@ -142,7 +131,5 @@ button = Button(window, text="Entrar", command=analisa_credenciais, fg='white', 
 button.place(x=210, y=210)
 
 
-
-    
 if __name__ == "__main__":
     window.mainloop()
