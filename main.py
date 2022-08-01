@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0
 
 '''
 Author: www.github.com/JuanBindez
-Description: registration whith Tkinter and Sqlite3
+Description: registration with Tkinter and Sqlite3
 Python Version: 3.10
 Local: Brazil
 '''
