@@ -26,6 +26,5 @@ def delete_id(id_del):
 
 
 def insert_datas(a, b, c):
-    
     cursor.execute("INSERT INTO record VALUES(NULL, '"+a+"','"+b+"','"+c+"')")
     base_db.commit()#this command saves the datas in database
